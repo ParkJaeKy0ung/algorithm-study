@@ -6,14 +6,14 @@ public class forPractice {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int T = sc.nextInt();
-		int a, b;
-		int sum = 0;
-		
-		for(int i=1; i<=T; i++) {
-			a = sc.nextInt();
-			b = sc.nextInt();
-			sum = a+b;
+//		int T = sc.nextInt();
+//		int a, b;
+//		int sum = 0;
+//		
+//		for(int i=1; i<=T; i++) {
+//			a = sc.nextInt();
+//			b = sc.nextInt();
+//			sum = a+b;
 			
 			// A+B - 3
 //			System.out.println(sum);
@@ -22,8 +22,26 @@ public class forPractice {
 //			System.out.printf("Case #%d: %d\n", i, sum);
 			
 			// A+B - 8
-			System.out.printf("Case #%d: %d + %d = %d\n", i, a, b, sum);
+//			System.out.printf("Case #%d: %d + %d = %d\n", i, a, b, sum);
+//		}
+		
+		
+		// 일차원 배열 - 개수 세기
+		int N = sc.nextInt();
+		int[] arr = new int[N];
+		int count = 0;
+		
+		for(int i=0; i<N; i++) {
+			arr[i] = sc.nextInt();
 		}
+		int v = sc.nextInt();
+		
+		for(int j=0; j<N; j++) {
+			if(v==arr[j]) {
+				count++;
+			}
+		}
+		System.out.println(count);
 	}
 }
 
