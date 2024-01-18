@@ -13,8 +13,8 @@ public class 최댓값 {
 		}
 		sc.close();
 		
-		int max = arr[0];
 		int count = 0;
+		int max = 0; // max = arr[0] 안 됨 -> 첫번째가 최댓값일 경우 index가 0 나옴.
 		int index = 0;
 		
 		for(int j=0; j<arr.length; j++) {
