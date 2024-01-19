@@ -27,21 +27,43 @@ public class forPractice {
 		
 		
 		// 일차원 배열 - 개수 세기
-		int N = sc.nextInt();
-		int[] arr = new int[N];
-		int count = 0;
+//		int N = sc.nextInt();
+//		int[] arr = new int[N];
+//		int count = 0;
+//		
+//		for(int i=0; i<N; i++) {
+//			arr[i] = sc.nextInt();
+//		}
+//		int v = sc.nextInt();
+//		
+//		for(int j=0; j<N; j++) {
+//			if(v==arr[j]) {
+//				count++;
+//			}
+//		}
+//		System.out.println(count);
 		
-		for(int i=0; i<N; i++) {
+		
+		// 일차원 배열 - 최댓값
+		int[] arr = new int[9];
+		for(int i=0; i<arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
-		int v = sc.nextInt();
+		sc.close();
 		
-		for(int j=0; j<N; j++) {
-			if(v==arr[j]) {
-				count++;
+		int max = 0;
+		int index = 0;
+		int count = 0;
+		
+		for(int j=0; j<arr.length; j++) {
+			count++;
+			
+			if(max < arr[j]) {
+				max = arr[j];
+				index = count;
 			}
 		}
-		System.out.println(count);
+		System.out.println(max + "\n" + index);
 	}
 }
 
