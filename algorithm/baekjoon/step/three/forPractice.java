@@ -45,25 +45,47 @@ public class forPractice {
 		
 		
 		// 일차원 배열 - 최댓값
-		int[] arr = new int[9];
-		for(int i=0; i<arr.length; i++) {
-			arr[i] = sc.nextInt();
+//		int[] arr = new int[9];
+//		for(int i=0; i<arr.length; i++) {
+//			arr[i] = sc.nextInt();
+//		}
+//		sc.close();
+//		
+//		int max = 0;
+//		int index = 0;
+//		int count = 0;
+//		
+//		for(int j=0; j<arr.length; j++) {
+//			count++;
+//			
+//			if(max < arr[j]) {
+//				max = arr[j];
+//				index = count;
+//			}
+//		}
+//		System.out.println(max + "\n" + index);
+		
+		
+		// 일차원 배열 - 공 넣기
+		int N = sc.nextInt();
+		int M = sc.nextInt();
+		int[] arr = new int[N];
+		
+		for(int i=0; i<M; i++) {
+			int I = sc.nextInt();
+			int J = sc.nextInt();
+			int K = sc.nextInt();
+			
+			for(int j=I-1; j<J; j++) {
+				arr[j] = K;
+			}
 		}
 		sc.close();
 		
-		int max = 0;
-		int index = 0;
-		int count = 0;
-		
-		for(int j=0; j<arr.length; j++) {
-			count++;
-			
-			if(max < arr[j]) {
-				max = arr[j];
-				index = count;
-			}
+		for(int k=0; k<arr.length; k++) {
+			System.out.print(arr[k] + " ");
 		}
-		System.out.println(max + "\n" + index);
+		
 	}
 }
 
