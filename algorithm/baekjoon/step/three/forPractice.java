@@ -67,25 +67,47 @@ public class forPractice {
 		
 		
 		// 일차원 배열 - 공 넣기
-		int N = sc.nextInt();
-		int M = sc.nextInt();
-		int[] arr = new int[N];
+//		int N = sc.nextInt();
+//		int M = sc.nextInt();
+//		int[] arr = new int[N];
+//		
+//		for(int i=0; i<M; i++) {
+//			int I = sc.nextInt();
+//			int J = sc.nextInt();
+//			int K = sc.nextInt();
+//			
+//			for(int j=I-1; j<J; j++) {
+//				arr[j] = K;
+//			}
+//		}
+//		sc.close();
+//		
+//		for(int k=0; k<arr.length; k++) {
+//			System.out.print(arr[k] + " ");
+//		}
 		
-		for(int i=0; i<M; i++) {
+		
+		// 일차원 배열 - 공 바꾸기
+		int N = sc.nextInt(); // 바구니 총 N개
+		int M = sc.nextInt(); // M번 공 교환
+		int[] arr = new int[N]; // 바구니 공 배열
+		
+		for(int i=0; i<arr.length; i++) { // 바구니에 공 1개씩, 바구니 번호 = 공 번호
+			arr[i] = i+1;
+		}
+		
+		for(int i=0; i<M; i++) { // M번 공 교환
 			int I = sc.nextInt();
 			int J = sc.nextInt();
-			int K = sc.nextInt();
 			
-			for(int j=I-1; j<J; j++) {
-				arr[j] = K;
-			}
-		}
-		sc.close();
-		
-		for(int k=0; k<arr.length; k++) {
-			System.out.print(arr[k] + " ");
+			int temp = arr[I-1]; 
+			arr[I-1] = arr[J-1];
+			arr[J-1] = temp;
 		}
 		
+		for(int i=0; i<arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
 	}
 }
 
