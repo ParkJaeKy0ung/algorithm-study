@@ -88,26 +88,42 @@ public class forPractice {
 		
 		
 		// 일차원 배열 - 공 바꾸기
-		int N = sc.nextInt(); // 바구니 총 N개
-		int M = sc.nextInt(); // M번 공 교환
-		int[] arr = new int[N]; // 바구니 공 배열
+//		int N = sc.nextInt(); // 바구니 총 N개
+//		int M = sc.nextInt(); // M번 공 교환
+//		int[] arr = new int[N]; // 바구니 공 배열
+//		
+//		for(int i=0; i<arr.length; i++) { // 바구니에 공 1개씩, 바구니 번호 = 공 번호
+//			arr[i] = i+1;
+//		}
+//		
+//		for(int i=0; i<M; i++) { // M번 공 교환
+//			int I = sc.nextInt();
+//			int J = sc.nextInt();
+//			
+//			int temp = arr[I-1]; 
+//			arr[I-1] = arr[J-1];
+//			arr[J-1] = temp;
+//		}
+//		
+//		for(int i=0; i<arr.length; i++) {
+//			System.out.print(arr[i] + " ");
+//		}
 		
-		for(int i=0; i<arr.length; i++) { // 바구니에 공 1개씩, 바구니 번호 = 공 번호
-			arr[i] = i+1;
+		
+		// 일차원 배열 - 과제 안 내신 분
+		int[] arr = new int[31];
+		
+		for(int i=1; i<29; i++) {
+			int n = sc.nextInt();
+			arr[n] = 1;
 		}
 		
-		for(int i=0; i<M; i++) { // M번 공 교환
-			int I = sc.nextInt();
-			int J = sc.nextInt();
-			
-			int temp = arr[I-1]; 
-			arr[I-1] = arr[J-1];
-			arr[J-1] = temp;
+		for(int i=1; i<31; i++) {
+			if(arr[i] != 1) {
+				System.out.println(i);
+			}
 		}
-		
-		for(int i=0; i<arr.length; i++) {
-			System.out.print(arr[i] + " ");
-		}
+		sc.close();
 	}
 }
 
