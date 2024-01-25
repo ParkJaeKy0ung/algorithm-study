@@ -1,5 +1,6 @@
 package step.three;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class forPractice {
@@ -111,19 +112,30 @@ public class forPractice {
 		
 		
 		// 일차원 배열 - 과제 안 내신 분
-		int[] arr = new int[31];
+//		int[] arr = new int[31];
+//		
+//		for(int i=1; i<29; i++) {
+//			int n = sc.nextInt();
+//			arr[n] = 1;
+//		}
+//		
+//		for(int i=1; i<31; i++) {
+//			if(arr[i] != 1) {
+//				System.out.println(i);
+//			}
+//		}
+//		sc.close();
 		
-		for(int i=1; i<29; i++) {
-			int n = sc.nextInt();
-			arr[n] = 1;
-		}
 		
-		for(int i=1; i<31; i++) {
-			if(arr[i] != 1) {
-				System.out.println(i);
-			}
+		// 일차원 배열 - 나머지
+		HashSet<Integer> hs = new HashSet<Integer>();
+		
+		for(int i=0; i<10; i++) {
+			hs.add(sc.nextInt() % 42);
 		}
 		sc.close();
+		System.out.println(hs.size());
+	
 	}
 }
 
