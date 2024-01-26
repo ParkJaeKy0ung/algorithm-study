@@ -21,7 +21,7 @@ public class 나머지 {
 		System.out.println(hs.size());
 		
 //		int[] arr = new int[10];
-//		int count = 0; // 서로 다른 값 갯수
+//		int count = 0; // 서로 다른 값 개수
 //		boolean bl; // n번째 나머지와 n+1번째 나머지 비교하기 위한 변수
 //		
 //		for(int i=0; i<arr.length; i++) { // 나머지값 배열에 초기화
