@@ -1,6 +1,6 @@
-package baekjoon_10172;
+package step.one;
 
-public class Main {
+public class 개 {
 	public static void main(String[] args) {
 		System.out.println(
 			"|\\_/|\n" + 

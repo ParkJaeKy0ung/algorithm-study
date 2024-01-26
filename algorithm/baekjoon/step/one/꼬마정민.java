@@ -1,8 +1,8 @@
-package baekjoon_11382;
+package step.one;
 
 import java.util.Scanner;
 
-public class Main {
+public class 꼬마정민 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		

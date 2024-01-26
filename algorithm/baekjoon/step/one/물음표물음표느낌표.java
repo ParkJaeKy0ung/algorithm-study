@@ -1,8 +1,8 @@
-package baekjoon_10926;
+package step.one;
 
 import java.util.Scanner;
 
-public class Main {
+public class 물음표물음표느낌표 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String id = sc.next();

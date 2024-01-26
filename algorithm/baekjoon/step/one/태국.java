@@ -1,8 +1,8 @@
-package baekjoon_18108;
+package step.one;
 
 import java.util.Scanner;
 
-public class Main {
+public class 태국 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int year = sc.nextInt();

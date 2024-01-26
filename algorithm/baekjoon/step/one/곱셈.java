@@ -1,8 +1,8 @@
-package baekjoon_2588;
+package step.one;
 
 import java.util.Scanner;
 
-public class Main {
+public class 곱셈 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
